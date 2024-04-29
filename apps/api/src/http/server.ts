@@ -103,12 +103,12 @@ app.register(getProject)
 app.register(getProjects)
 app.register(updateProject)
 
-// members
+// Members
 app.register(getMembers)
 app.register(updateMember)
 app.register(removeMember)
 
-// invites
+// Invites
 app.register(createInvite)
 app.register(getInvite)
 app.register(getInvites)
@@ -117,7 +117,7 @@ app.register(rejectInvite)
 app.register(revokeInvite)
 app.register(getPendingInvites)
 
-// billing
+// Billing
 app.register(getOrganizationBilling)
 
 app.listen({ port: env.SERVER_PORT }).then(() => {
