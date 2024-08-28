@@ -1,5 +1,10 @@
-import { Button } from '@/components/ui/button'
+import { auth } from '@/auth/auth'
 
-export default function Home() {
-  return <Button>Sign In</Button>
+export default async function Home() {
+  const { user } = await auth()
+  return (
+    <div>
+      <pre>{JSON.stringify(user, null, 2)}</pre>
+    </div>
+  )
 }
