@@ -12,7 +12,7 @@ import {
 } from '../ui/dropdown-menu'
 
 export function ThemeSwitcher() {
-const { setTheme } = useTheme()
+  const { setTheme } = useTheme()
 
   return (
     <DropdownMenu>
